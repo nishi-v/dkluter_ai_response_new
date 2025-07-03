@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "dkluter-ai-response"
+version = "0.1.0"
+description = ""
+authors = ["nishi-v <nishitav@futuresoftindia.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+google-genai = "^1.3.0"
+python-dotenv = "^1.0.1"
+pillow = "^11.1.0"
+pandas = "^2.2.3"
+streamlit = "^1.43.2"
+pyyaml = "^6.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
