@@ -267,3 +267,4 @@ asset_images
 *.zip
 Additional Files/
 .devcontainer/
+extra_files/

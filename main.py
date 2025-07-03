@@ -63,7 +63,7 @@ async def gen_response(api: str, img: Image.Image, prompt_text: str, search_tool
     This allows multiple API calls to run concurrently without blocking the event loop.
     """
     client = genai.Client(api_key=api)
-    model_id = "gemini-2.0-flash"
+    model_id = "gemini-2.5-flash-lite-preview-06-17"
 
     google_search_tool = Tool(
         google_search=GoogleSearch(),
@@ -368,7 +368,7 @@ async def convert_json_to_yaml(data: dict)-> str:
 
 async def generate_cache_token(api_key: str, prompt: str)-> str:
     client = genai.Client(api_key=api_key)
-    model_id = "gemini-2.0-flash"
+    model_id = "gemini-2.5-flash-lite-preview-06-17"
 
     cache = client.caches.create(
     model=model_id,

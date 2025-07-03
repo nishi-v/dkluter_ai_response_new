@@ -356,6 +356,7 @@ def prepare_csv_with_search_tool(csv_path:str, enable_search_tool:bool)->pd.Data
 
 # Streamlit UI
 st.title("Image Analysis Tool")
+st.subheader("Using: Flash 2.5 Lite Preview Model")
 
 # Choose workflow option
 workflow = st.radio("Select Workflow", ["Upload Images", "Upload CSV"])
